@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/jmr-website/static/js/main.245c322c.js",
+    "main.js": "/jmr-website/static/js/main.cb7d76bf.js",
     "index.html": "/jmr-website/index.html",
-    "main.245c322c.js.map": "/jmr-website/static/js/main.245c322c.js.map"
+    "main.cb7d76bf.js.map": "/jmr-website/static/js/main.cb7d76bf.js.map"
   },
   "entrypoints": [
-    "static/js/main.245c322c.js"
+    "static/js/main.cb7d76bf.js"
   ]
 }
