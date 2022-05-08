@@ -1,8 +1,16 @@
+import Header from ".././componenet/header/Header"
 import React from 'react'
-
+import Footer from "../componenet/footer/Footer"
+import MainHome from "../componenet/main/MainHome"
 function Home() {
   return (
-    <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facere at quam aspernatur commodi laborum recusandae aperiam atque officia molestiae rem dignissimos quibusdam, rerum illum? Aliquam molestiae blanditiis est cumque. </div>
+    <div> 
+      <Header />
+      <br />
+      <MainHome />
+      <br />
+      <Footer/>
+    </div>
   )
 }
 

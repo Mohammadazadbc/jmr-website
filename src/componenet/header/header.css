@@ -1,0 +1,151 @@
+.headerContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+.firstHeader{
+    background-color: #009FE3;
+    height: 100px;
+}
+.headerTop{
+    display: flex;
+    padding-top: 10px;
+    position: relative;
+    left: 20%;
+}
+.headerTop p{
+    font-size: 18px;
+}
+.headerBottom {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.headerBottom span{
+    color: white;
+    font-size: 16px;
+}
+
+
+/* SECOND HEADER */
+.secondHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    -webkit-box-shadow: 0px 9px 15px -8px #000000; 
+box-shadow: 0px 9px 15px -8px #000000;
+}
+.secondHeaderTop{
+    margin-right: 5%;
+}
+.secondHeaderTop img{
+    width: 200px;
+    height: 200px;
+}
+
+.secondHeaderBottom span{
+    margin-right: 20px;
+}
+.firstHeaderSm{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    color: black;
+    flex-direction: column;
+    height: 150px;
+}
+.FHSMtop{
+    height: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FHSMtop img{
+    height: 100%;
+    width: 200px;
+}
+.FHSMBottom{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.5;
+}
+
+
+
+.secondtHeaderSm{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+.menuIcon{
+    background-color: #005493;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 15px;
+    margin-bottom: 1px;
+}
+.menuIcon p{
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+.itemList{
+    background-color: #005493;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.hide{
+    display: none;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+.items1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.itemList span {    
+    color: rgb(229, 202, 202);
+}
+.items span{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+    
+}
+.addColor{
+    color: red;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 770px){
+    .firstHeader{
+        display: none;
+    }
+    .secondHeader{
+        display: none;
+    }
+    .firstHeaderSm{
+        display: flex
+    }
+    .secondtHeaderSm{
+        display: flex;
+    }
+}
