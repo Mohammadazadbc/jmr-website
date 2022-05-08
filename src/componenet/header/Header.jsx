@@ -5,7 +5,7 @@ import {ImPhone} from "react-icons/im"
 import logo from './jrm.png';
 import {HiMenu} from "react-icons/hi"
 
-function Header() {
+function Header({goToServiceSection, goToFooterSection}) {
     const [showMenu, setShowMenu] = useState(false)
     const ShowHideMenu = ()=>{
         setShowMenu(!showMenu)
@@ -40,8 +40,9 @@ function Header() {
                 <Link style={{textDecoration:'none'}} to=""><span>WARMTEPOMP </span></Link>
                 <Link style={{textDecoration:'none'}} to=""><span>AIRCO </span></Link>
                 <Link style={{textDecoration:'none'}} to=""><span>VENTILATIE </span></Link>
-                <Link style={{textDecoration:'none'}} to=""><span>SERVICE </span></Link>
-                <Link style={{textDecoration:'none'}} to=""><span>CONTACT </span></Link>
+                <a style={{textDecoration:'none'}} href={`#${goToServiceSection}`} ><span>SERVICE </span></a>
+                <a style={{textDecoration:'none'}} href={`#${goToFooterSection}`}><span>CONTACT </span></a>
+               
               
             </div>
         </div>

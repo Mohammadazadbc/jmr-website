@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 import {RiInstagramFill} from "react-icons/ri"
 
 
-function Footer() {
+function Footer(props) {
   return (
-    <div className='footerContainer' >
+    <div id={props.footerid} className='footerContainer' >
         <div className="footerTop">
             <h4>CONTACTEER OPTIMACOOL</h4>
             <div className='footerTopInfos' > 

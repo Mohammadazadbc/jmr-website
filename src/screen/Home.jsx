@@ -1,15 +1,20 @@
 import Header from ".././componenet/header/Header"
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from "../componenet/footer/Footer"
 import MainHome from "../componenet/main/MainHome"
 function Home() {
+  const [goToServiceSection ,setgoToServiceSection] = useState("serivce")
+  const [goToFooterSection ,setgoToFooterSection] = useState("footer")
   return (
     <div> 
-      <Header />
+      <Header 
+      goToServiceSection={goToServiceSection}
+      goToFooterSection={goToFooterSection}
+       />
       <br />
-      <MainHome />
+      <MainHome services={goToServiceSection} />
       <br />
-      <Footer/>
+      <Footer footerid={goToFooterSection} />
     </div>
   )
 }

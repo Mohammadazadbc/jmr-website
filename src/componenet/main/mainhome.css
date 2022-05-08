@@ -27,21 +27,99 @@
 }
 .MHCenter h3{
     color: #005493;
+    margin-left: 10px;
+    font-size: 42px;
+    font-weight: bolder;
 }
 .MHCenter p{
     width: 65%;
+    margin-left: 10px;
+    padding: 30px 0;
 }
 .sericeProvide{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
 }
 .sericeProvide img{
     width: 300px;
     height: 300px;
+    cursor: pointer;
+}
+.sericeProvide img:hover{
+    transform: scale(1.04);
 }
 .sericeProvide .service p{
     font-weight: bold;
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #005493;
+    width: 300px;
+   
+    cursor: pointer;
+}
+.sericeProvide .service p:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1460px){
+    .mainWrapper{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 1256px){
+    .sericeProvide{
+        grid-template-columns: repeat(3, auto);
+        padding: 0 20px;
+    }
+ 
+    .MHTop img{
+        width: 70%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 986px){
+    .sericeProvide{
+        grid-template-columns: repeat(2, auto);
+        padding: 0 20px;
+        justify-content: space-around;
+    }
+    .sericeProvide img{
+        width: 250px;
+        height: 250px;
+    }
+    .MHCenter p{
+        width: 100%;
+    }
+    .MHTop img{
+        width: 90%;
+        height: 100%;
+    }
+    .sericeProvide .service p{
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 570px){
+    .sericeProvide{
+        grid-template-columns: repeat(1, auto);
+        padding: 0 20px;
+        justify-content: center;
+    }
+    .sericeProvide img{
+        width: 300px;
+        height: 300px;
+    }
+    .MHTop img{
+        width: 350px;
+        height: 200px;
+    }
+    .sericeProvide .service p{
+        width: 290px;
+    }
 }
