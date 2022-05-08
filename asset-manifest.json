@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jmr-website/static/css/main.900ef962.css",
-    "main.js": "/jmr-website/static/js/main.9b6df3cb.js",
+    "main.js": "/jmr-website/static/js/main.28e19c43.js",
     "static/media/Koelmeubelen.jpg": "/jmr-website/static/media/Koelmeubelen.1a0711fe21e55bc76eef.jpg",
     "static/media/koelebergingen.jpg": "/jmr-website/static/media/koelebergingen.a5a9c695adfdaaf3429d.jpg",
     "static/media/bg.jpg": "/jmr-website/static/media/bg.8688efbf7566af37f639.jpg",
@@ -10,10 +10,10 @@
     "static/media/jrm.png": "/jmr-website/static/media/jrm.39d6b6a7c0eb19c781e7.png",
     "index.html": "/jmr-website/index.html",
     "main.900ef962.css.map": "/jmr-website/static/css/main.900ef962.css.map",
-    "main.9b6df3cb.js.map": "/jmr-website/static/js/main.9b6df3cb.js.map"
+    "main.28e19c43.js.map": "/jmr-website/static/js/main.28e19c43.js.map"
   },
   "entrypoints": [
     "static/css/main.900ef962.css",
-    "static/js/main.9b6df3cb.js"
+    "static/js/main.28e19c43.js"
   ]
 }
