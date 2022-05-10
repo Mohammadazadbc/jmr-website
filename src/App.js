@@ -1,16 +1,16 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom"
-import Home from "./screen/Home";
-import Profile from "./screen/Profile";
 
+import { useState } from "react";
+import MainHome from "./componenet/main/MainHome"
+import Header from "./componenet/header/Header"
+import Footer from "./componenet/footer/Footer";
 function App() {
+
   return ( 
-  // <BrowserRouter>
-  //   <Routes>
-  //  <Route path="/" element={<Home/>} />
-  //  <Route path="/profile" element={<Profile/>} />
-  //   </Routes>
-  // </BrowserRouter>
-  <Home />
+    <>
+    <Header />
+    <MainHome />
+    <Footer />
+    </>
   );
 }
 

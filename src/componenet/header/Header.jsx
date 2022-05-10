@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import {Link} from "react-router-dom"
+
 import "./header.css"
 import {ImPhone} from "react-icons/im"
 import logo from './jrm.png';
 import {HiMenu} from "react-icons/hi"
 
-function Header({goToServiceSection, goToFooterSection}) {
+function Header() {
     const [showMenu, setShowMenu] = useState(false)
     const ShowHideMenu = ()=>{
         setShowMenu(!showMenu)
@@ -18,14 +18,14 @@ function Header({goToServiceSection, goToFooterSection}) {
         </div>
 
         <div className="headerBottom">
-            <Link style={{textDecoration:'none'}} to="" > <span>Aanpak &nbsp;&nbsp; | &nbsp;  </span> </Link>
-            <Link style={{textDecoration:'none'}} to="" > <span>Over ons &nbsp;&nbsp; | &nbsp;</span> </Link>
-            <Link style={{textDecoration:'none'}} to="" > <span>Verhuur &nbsp;&nbsp; | &nbsp;</span> </Link>
-            <Link style={{textDecoration:'none'}} to="" > <span>Verkoop &nbsp;&nbsp; | &nbsp;</span> </Link>
-            <Link style={{textDecoration:'none'}} to="" > <span> Blog &nbsp;&nbsp; | &nbsp;</span> </Link>
-            <Link style={{textDecoration:'none'}} to="" > <span> Realisaties &nbsp;&nbsp; | &nbsp;</span> </Link>
-            <Link style={{textDecoration:'none'}} to="" > <span> D.D.cool &nbsp;&nbsp; | &nbsp;</span> </Link>
-            <Link style={{textDecoration:'none'}} to="" > <span> Asogem-Equipment </span> </Link>
+            <a style={{textDecoration:'none'}} href=''> <span>Aanpak &nbsp;&nbsp; | &nbsp;  </span> </a>
+            <a style={{textDecoration:'none'}} href=''> <span>Over ons &nbsp;&nbsp; | &nbsp;</span> </a>
+            <a style={{textDecoration:'none'}} href=''> <span>Verhuur &nbsp;&nbsp; | &nbsp;</span> </a>
+            <a style={{textDecoration:'none'}} href=''> <span>Verkoop &nbsp;&nbsp; | &nbsp;</span> </a>
+            <a style={{textDecoration:'none'}} href=''> <span> Blog &nbsp;&nbsp; | &nbsp;</span> </a>
+            <a style={{textDecoration:'none'}} href=''> <span> Realisaties &nbsp;&nbsp; | &nbsp;</span> </a>
+            <a style={{textDecoration:'none'}} href=''> <span> D.D.cool &nbsp;&nbsp; | &nbsp;</span> </a>
+            <a style={{textDecoration:'none'}} href=''> <span> Asogem-Equipment </span> </a>
            
         </div>
         </div>
@@ -35,13 +35,13 @@ function Header({goToServiceSection, goToFooterSection}) {
                 <img src={logo} alt="" />
             </div>
             <div className='secondHeaderBottom'>
-                <Link style={{textDecoration:'none'}} to=""><span>HOME </span></Link>
-                <Link style={{textDecoration:'none'}} to=""><span className='addColor'>KOELTECHNIEK</span></Link>
-                <Link style={{textDecoration:'none'}} to=""><span>WARMTEPOMP </span></Link>
-                <Link style={{textDecoration:'none'}} to=""><span>AIRCO </span></Link>
-                <Link style={{textDecoration:'none'}} to=""><span>VENTILATIE </span></Link>
-                <a style={{textDecoration:'none'}} href={`#${goToServiceSection}`} ><span>SERVICE </span></a>
-                <a style={{textDecoration:'none'}} href={`#${goToFooterSection}`}><span>CONTACT </span></a>
+                <a style={{textDecoration:'none'}} to=""><span>HOME </span></a>
+                <a style={{textDecoration:'none'}} to=""><span className='addColor'>KOELTECHNIEK</span></a>
+                <a style={{textDecoration:'none'}} to=""><span>WARMTEPOMP </span></a>
+                <a style={{textDecoration:'none'}} to=""><span>AIRCO </span></a>
+                <a style={{textDecoration:'none'}} to=""><span>VENTILATIE </span></a>
+                <a style={{textDecoration:'none'}}  href="" ><span>SERVICE </span></a>
+                <a style={{textDecoration:'none'}} href=""><span>CONTACT </span></a>
                
               
             </div>
@@ -65,24 +65,24 @@ function Header({goToServiceSection, goToFooterSection}) {
             </div>
             <div className={showMenu ? 'itemList' : "hide"}  >
             <div className='items'>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>HOME </span></Link>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>KOELTECHNIEK</span></Link>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>WARMTEPOMP </span></Link>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>AIRCO </span></Link>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>VENTILATIE </span></Link>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>SERVICE </span></Link>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>CONTACT </span></Link>
+                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>HOME </span></a>
+                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>KOELTECHNIEK</span></a>
+                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>WARMTEPOMP </span></a>
+                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>AIRCO </span></a>
+                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>VENTILATIE </span></a>
+                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>SERVICE </span></a>
+                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>CONTACT </span></a>
               
             </div>
             <div className="items1">
-            <Link style={{textDecoration:'none', marginBottom:10}} to="" > <span>Aanpak  </span> </Link>
-            <Link style={{textDecoration:'none',marginBottom:10 }} to="" > <span>Over ons </span> </Link>
-            <Link style={{textDecoration:'none',marginBottom:10}} to="" > <span>Verhuur </span> </Link>
-            <Link style={{textDecoration:'none',marginBottom:10}} to="" > <span>Verkoop </span> </Link>
-            <Link style={{textDecoration:'none' ,marginBottom:10}} to="" > <span> Blog </span> </Link>
-            <Link style={{textDecoration:'none', marginBottom:10}} to="" > <span> Realisaties </span> </Link>
-            <Link style={{textDecoration:'none' ,marginBottom:10}} to="" > <span> D.D.cool </span> </Link>
-            <Link style={{textDecoration:'none' ,marginBottom:10}} to="" > <span> Asogem-Equipment </span> </Link>
+            <a style={{textDecoration:'none', marginBottom:10}} href=''> <span>Aanpak  </span> </a>
+            <a style={{textDecoration:'none',marginBottom:10 }} href=''> <span>Over ons </span> </a>
+            <a style={{textDecoration:'none',marginBottom:10}} href=''> <span>Verhuur </span> </a>
+            <a style={{textDecoration:'none',marginBottom:10}} href=''> <span>Verkoop </span> </a>
+            <a style={{textDecoration:'none' ,marginBottom:10}} href=''> <span> Blog </span> </a>
+            <a style={{textDecoration:'none', marginBottom:10}} href=''> <span> Realisaties </span> </a>
+            <a style={{textDecoration:'none' ,marginBottom:10}} href=''> <span> D.D.cool </span> </a>
+            <a style={{textDecoration:'none' ,marginBottom:10}} href=''> <span> Asogem-Equipment </span> </a>
            
         </div>
             </div>

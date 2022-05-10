@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 import {RiInstagramFill} from "react-icons/ri"
 
 
-function Footer(props) {
+function Footer() {
   return (
-    <div id={props.footerid} className='footerContainer' >
+    <div className='footerContainer' >
         <div className="footerTop">
             <h4>CONTACTEER OPTIMACOOL</h4>
             <div className='footerTopInfos' > 
@@ -16,8 +16,9 @@ function Footer(props) {
                 <p ><AiOutlineMail color='red' />  info.jmr7@gmail.com </p>
                 <p ><ImPhone color='red' /> : +32 47 890 03 05</p>
                 <p>
-                <Link  to="" > <AiFillFacebook color='white' size={23} /> </Link>
-                <Link to="" > <RiInstagramFill color='white' size={23} /> </Link>
+
+                <a  href='' > <AiFillFacebook color='white' size={23} /> </a>
+                <a href='' > <RiInstagramFill color='white' size={23} /> </a>
                 </p>
                
                

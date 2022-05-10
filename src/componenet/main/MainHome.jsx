@@ -15,7 +15,7 @@ function MainHome(props) {
         <div className='MHTop'>
             <img src={bgImg} alt="" />
         </div>
-        <div id={props.services} className='MHCenter'>
+        <div className='MHCenter'>
             <h3>Uw specialist in koeltechniek</h3>
             <p> Wij voeren kwaliteitswerk uit. JRM als specialist in  koeling installaties in Vlaanderen en omstreken.</p>
             <div  className='sericeProvide'>
