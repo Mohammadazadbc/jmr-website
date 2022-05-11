@@ -8,20 +8,23 @@ import koelebergingen from  "./assete/koelebergingen.jpg"
 import Koelmeubelen from  "./assete/Koelmeubelen.jpg"
 import proceskoeling from  "./assete/proceskoeling.jpg"
 
-function MainHome(props) {
+function MainHome({setKoelcellen}, props) {
+    const GoToKoelCellenPage =()=>{
+        setKoelcellen(true)
+    }
   return (
     <div className='mainHomeContainer' >
         <div className="mainWrapper">
         <div className='MHTop'>
             <img src={bgImg} alt="" />
         </div>
-        <div id={props.services} className='MHCenter'>
+        <div id={props.serviceId} className='MHCenter'>
             <h3>Uw specialist in koeltechniek</h3>
             <p> Wij voeren kwaliteitswerk uit. JRM als specialist in  koeling installaties in Vlaanderen en omstreken.</p>
             <div  className='sericeProvide'>
                 <div className="service">
                     <img src={koelcellen} alt="" />
-                    <p><span>Koelcellen</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
+                    <p onClick={GoToKoelCellenPage} ><span>Koelcellen</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
                 </div>
                 <div className="service">
                     <img src={Diepvriescellen} alt="" />

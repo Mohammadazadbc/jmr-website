@@ -1,0 +1,201 @@
+.koelcellenContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstSection{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg-img{
+    width: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+.bg-img img{
+    width: 100%;
+}
+.koelcellenMain{
+    width: 80%;
+    margin-top: 30px;
+}
+.koelcellenMain h1{
+    color: #005493;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.koelDesctioption{
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+
+}
+.koelDesctioption p{
+    font-size: 18px;
+}
+
+.secondP{
+    margin-bottom: 25px;
+  }
+  .thiredDiv{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    display: flex;
+    margin: 50px auto;
+
+  }
+.thiredDivTitle{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   
+}
+.thiredDiv p{
+    color: #005493;
+    font-size: 28px;
+
+}
+ul li {
+
+    margin: 10px 0;
+}
+
+
+/* SECTINO TOW STYLE */
+
+.secondSectino{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SectionTowHeader{
+    width: 70%;
+    background-color: #005493;
+    height: 150px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.SectionTowHeader:hover{
+    background-color: #193e5a;
+    cursor: pointer;
+}
+.SectionTowHeader h3{
+    color: white;
+   
+}
+
+.SectionTowHeader p{
+    color: white;
+}
+  
+
+.imagesSection{
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.imagesSection .imgleft{
+    flex:0.5;
+
+}
+.imagesSection .imgleft img{
+    width: 500px;
+    margin-right: 20px;
+    
+}
+.imagesSection .imgRight{
+    flex: 1;
+}
+.imagesSection .imgRight img{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+}
+.imagesSection .imgRight img:hover{
+    transform: scale(1.1);
+}
+
+/* SECTIN THREE STYLE  */
+
+.sectionThree{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionThreeWrapper{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+}
+.sectionThredleft{
+    flex: 2;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+.descOne h2{
+    color: #005493;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sectionThredRight{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.descOne p {
+    font-size: 20px;
+}
+.ThredRightWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.ThredRightWrapperTop{
+    padding: 25px 0;
+    background-color: #005493;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.ThredRightWrapperBottom{
+    padding: 25px 0;
+    background-color: #DA0924;   
+    cursor: pointer;
+}
+.ThredRightWrapperBottom:hover,
+.ThredRightWrapperTop:hover{
+    transform: scale(1.03);
+}
+.ThredRightWrapperTop h4{
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.ThredRightWrapperBottom h4{
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
