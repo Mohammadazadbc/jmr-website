@@ -4,13 +4,12 @@ import Profile from "./screen/Profile";
 
 function App() {
   return ( 
-  // <BrowserRouter>
-  //   <Routes>
-  //  <Route path="/" element={<Home/>} />
-  //  <Route path="/profile" element={<Profile/>} />
-  //   </Routes>
-  // </BrowserRouter>
-  <Home />
+  <BrowserRouter>
+    <Routes>
+   <Route path="/" element={<Home/>} />
+   <Route path="/profile" element={<Profile/>} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 

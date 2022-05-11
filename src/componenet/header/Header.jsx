@@ -70,8 +70,8 @@ function Header({goToServiceSection, goToFooterSection}) {
                 <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>WARMTEPOMP </span></Link>
                 <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>AIRCO </span></Link>
                 <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>VENTILATIE </span></Link>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>SERVICE </span></Link>
-                <Link style={{textDecoration:'none', marginBottom:10}} to=""><span>CONTACT </span></Link>
+                <a style={{textDecoration:'none', marginBottom:10}} href={`#${goToServiceSection}`}><span>SERVICE </span></a>
+                <a style={{textDecoration:'none', marginBottom:10}} href={`#${goToFooterSection}`}><span>CONTACT </span></a>
               
             </div>
             <div className="items1">
