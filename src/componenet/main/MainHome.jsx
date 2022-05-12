@@ -8,9 +8,12 @@ import koelebergingen from  "./assete/koelebergingen.jpg"
 import Koelmeubelen from  "./assete/Koelmeubelen.jpg"
 import proceskoeling from  "./assete/proceskoeling.jpg"
 
-function MainHome({setKoelcellen}, props) {
+function MainHome({setKoelcellen,setDiepvriescellen}, props) {
     const GoToKoelCellenPage =()=>{
         setKoelcellen(true)
+    }   
+    const GoDiepvriesPage =()=>{
+        setDiepvriescellen(true)
     }
   return (
     <div className='mainHomeContainer' >
@@ -28,7 +31,7 @@ function MainHome({setKoelcellen}, props) {
                 </div>
                 <div className="service">
                     <img src={Diepvriescellen} alt="" />
-                    <p><span>Diepvriescellen</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
+                    <p onClick={GoDiepvriesPage}><span>Diepvriescellen</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
                 </div>
                 <div className="service">
                     <img src={Koelmeubelen} alt="" />

@@ -6,10 +6,13 @@ import logo from './jrm.png';
 import {HiMenu} from "react-icons/hi"
 import { a } from "react-router-dom"
 
-function Header({footerid,goToService}) {
+function Header({footerid,goToService,setDiepvriescellen}) {
     const [showMenu, setShowMenu] = useState(false)
     const ShowHideMenu = ()=>{
         setShowMenu(!showMenu)
+    }
+    const GoToHomePage =()=>{
+        setDiepvriescellen(false)
     }
   return (
     <div className='col-lg-12 col-md-12 col-sm-12 headerContainer'>
@@ -66,7 +69,8 @@ function Header({footerid,goToService}) {
             </div>
             <div className={showMenu ? 'itemList' : "hide"}  >
             <div className='items'>
-                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>HOME </span></a>
+               
+              <span onClick={GoToHomePage} >HOME </span>
                 <a style={{textDecoration:'none', marginBottom:10}} to=""><span>KOELTECHNIEK</span></a>
                 <a style={{textDecoration:'none', marginBottom:10}} to=""><span>WARMTEPOMP </span></a>
                 <a style={{textDecoration:'none', marginBottom:10}} to=""><span>AIRCO </span></a>

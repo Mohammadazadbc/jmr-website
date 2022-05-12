@@ -1,0 +1,209 @@
+.templateContainer{
+    width: 100%;
+    height: 100px;
+   height: auto;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+.temCoWrapper{
+    width: 70%;
+}
+
+.bgContaier{
+    width: 100%;
+
+}
+
+.descriptionContinaer{
+    width: 100%;
+     margin-top: 70px;
+}
+.descriptionContinaer h1{
+    color: #005493;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.descInfos  p{
+    font-size: 17px;
+    opacity: 0.9;
+    width: 70%;
+}
+
+.HeaderSection{
+    width: 100%;
+    background-color: #005493;
+    padding: 20px 20px;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.HeaderSection:hover{
+    transform: scale(1.01);
+}
+.HeaderSection h4{
+    color: white;
+}
+.HeaderSection h6{
+    color: white;
+}
+
+/* BOOTOM SECTION STYLLE */
+
+.bootomSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.bSleft{
+    flex: 1.6;
+   
+}
+
+
+.bootomSection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.SLeftWrapper h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.SLeftWrapperText{
+    opacity: 0.8;
+}
+
+.bSRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    
+}
+
+.bSRightBtn1{
+    background-color: #005493;
+    padding: 25px 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.bSRightBtn1 p, .bSRightBtn2 p{
+    color: white;
+    font-size: 24px;
+    width: 80%;
+}
+.bSRightBtn2{
+    background-color: red;
+    padding: 25px 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1500px){
+    .temCoWrapper{
+        width: 80%;
+    }
+    .bSRightBtn1{
+        width: 70%;
+    }
+    .bSRightBtn2{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1357px){
+    .temCoWrapper{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .temCoWrapper{
+        width: 100%;
+    }
+    .descriptionContinaer{
+        padding-left: 30px;
+        
+    }
+    .descInfos  p{
+        width: 90%;
+    }
+
+    .bSRightBtn1{
+        width: 60%;
+    }
+    .bSRightBtn2{
+        width: 60%;
+    }
+    .bSRightBtn1 p{
+        width: 90%;
+        font-size: 18px;
+    }
+    .bSRightBtn2 p{
+        width: 90%;
+        font-size: 18px;
+    }
+    .bSleft{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width: 879px){
+   .bootomSection{
+       flex-direction: column;
+   }
+   .bSRightBtn1{
+       margin-top: 20px;
+   }
+   .descriptionContinaer h1{
+        font-size: 28px;
+   }
+   .bgContaier img{
+     position: relative;
+     left: -150px;
+   }
+}
+
+@media only screen and (max-width: 600px){
+    .bSRightBtn1{
+        width: 80%;
+    }
+    .bSRightBtn2{
+        width: 80%;
+    }
+    .bSRightBtn1 p{
+        width: 60%;
+        font-size: 22px;
+    }
+    .bSRightBtn2 p{
+        width: 60%;
+        font-size: 22px;
+    }
+ 
+ }
+ @media only screen and (max-width: 466px){
+    .bSRightBtn1{
+        width: 80%;
+    }
+    .bSRightBtn2{
+        width: 80%;
+    }
+    .bSRightBtn1 p{
+        width: 70%;
+        font-size: 19px;
+    }
+    .bSRightBtn2 p{
+        width: 70%;
+        font-size: 19px;
+    }
+ }
