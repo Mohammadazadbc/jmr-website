@@ -8,12 +8,29 @@ import koelebergingen from  "./assete/koelebergingen.jpg"
 import Koelmeubelen from  "./assete/Koelmeubelen.jpg"
 import proceskoeling from  "./assete/proceskoeling.jpg"
 
-function MainHome({setKoelcellen,setDiepvriescellen}, props) {
+function MainHome(
+    {
+        setKoelcellen,
+        setDiepvriescellen,
+        setKoelmeubelen,
+        setkoeleBergingen,
+        setProceskoelingen
+    }
+    , props) {
     const GoToKoelCellenPage =()=>{
         setKoelcellen(true)
     }   
     const GoDiepvriesPage =()=>{
         setDiepvriescellen(true)
+    } 
+    const GoKoelmeubelenPage =()=>{
+        setKoelmeubelen(true)
+    }
+      const GoKoeleBergingenPage =()=>{
+        setkoeleBergingen(true)
+    } 
+     const GoProceskoelingenPage =()=>{
+        setProceskoelingen(true)
     }
   return (
     <div className='mainHomeContainer' >
@@ -35,17 +52,17 @@ function MainHome({setKoelcellen,setDiepvriescellen}, props) {
                 </div>
                 <div className="service">
                     <img src={Koelmeubelen} alt="" />
-                    <p><span>Koelmeubelen</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
+                    <p onClick={GoKoelmeubelenPage} ><span>Koelmeubelen</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
                
                 </div>
                 <div className="service">
                     <img src={koelebergingen} alt="" />
-                    <p><span>Koele bergingen</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
+                    <p onClick={GoKoeleBergingenPage}><span>Koele bergingen</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
                     
                 </div>
                 <div className="service">
                     <img src={proceskoeling} alt="" />
-                    <p><span>proceskoeling</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
+                    <p onClick={GoProceskoelingenPage}><span>proceskoeling</span><BsFillArrowRightSquareFill color='#005493' size={25} /> </p>
                 </div>
             </div>
         </div>

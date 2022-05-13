@@ -1,24 +1,23 @@
 import React from 'react'
 import "./serviceTamplate.css"
-import bgImage  from "./assets/bg.jpg"
 
-function ServiceTemple() {
+function ServiceTemple(props) {
   return (
     <div className='templateContainer' >
         <div className="temCoWrapper">
         <div className="bgContaier">
-            <img src={bgImage} alt="" />
+            <img src={props.bgImage} alt="" />
         </div>
 
         <div className="descriptionContinaer">
-            <h1>Diepvriescellen van hoge kwaliteit</h1>
+            <h1> {props.title} </h1>
             <div className='descInfos' >
                 <p>
-                    Elke klant is uniek. Daarom bestaat de eerste stap bij OptimaCool altijd uit een analyse van uw specifieke behoeften. Waarvoor wilt u de diepvriescellen gebruiken? Over welke ruimte beschikt u?
+                    {props.desinfos}
                 </p>
                 <br />
                 <p>
-                Voor kleine opslagruimtes volstaat de ‘Minibox’. Wie het wat groter ziet, maakt beter gebruik van een modulaire diepvrieskamer. Daarvoor is ook maatwerk mogelijk.  
+                {props.desinfos2} 
                 </p>
             </div>
         </div>
@@ -33,17 +32,23 @@ function ServiceTemple() {
         <div className="bootomSection">
             <div className="bSleft">
                 <div className="SLeftWrapper">
-                    <h3>Op maat van uw bedrijf</h3>
+                    <h3> {props.SleftH3} </h3>
                     <div className="SLeftWrapperText">
-                        <p>Naargelang het type diepvriescellen, verschilt de dikte van de wand. Hoe dikker de isolatie, hoe lager het energieverbruik. Deze diktes komen voor: </p>
+                        <p> {props.SleftP1} </p>
                         <ul>
-                            <li>8 cm: voor kleine of plaatsbesparende installaties</li>
-                            <li>10 cm: de meest voorkomende dikte</li>
-                            <li>14 cm: voor snelvriezers</li>
-                            <li>20 cm: geschikt voor industriële vrieshallen</li>
+                            <p style={{position:'relative', left:-15, fontWeight:'bold'}} > {props.listTitle} </p>
+                            <li> {props.listLi1} </li>
+                            <li>{props.listLi2}</li>
+                            <li> {props.listLi3} </li>
+                            <li>{props.listLi4}</li>
+                            <li>{props.listLi5}</li>
+                            <li>{props.listLi6}</li>
+                            <li>{props.listLi7}</li>
+                            <li>{props.listLi8}</li>
                         </ul>
                      <br />
-                        <p>Bij diepvriescellen is steeds een goed geïsoleerde vloer nodig. De toplaag is in PVC, inox, staal of beton. Een antislip-uitvoering is steeds mogelijk. Moet u in de cel rijden met een heftruck? Dan wordt uw diepvrieskamer ingebouwd, zodat er geen niveauverschil is. Voor uw comfort kunnen we alle diepvriescellen ook uitwerken met wandrekken. En dit zowel in aluminium, als in kunststof of inox.</p>
+                     <h3> {props.SleftH4} </h3>
+                        <p>{props.SleftP2}</p>
                     </div>
                 </div>
             </div>

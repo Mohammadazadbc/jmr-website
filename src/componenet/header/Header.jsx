@@ -6,13 +6,26 @@ import logo from './jrm.png';
 import {HiMenu} from "react-icons/hi"
 import { a } from "react-router-dom"
 
-function Header({footerid,goToService,setDiepvriescellen}) {
+function Header(
+    {
+        footerid,
+        goToService,
+        setDiepvriescellen,
+        setKoelmeubelen,
+        setkoeleBergingen,
+        setProceskoelingen
+    }
+    
+    ) {
     const [showMenu, setShowMenu] = useState(false)
     const ShowHideMenu = ()=>{
         setShowMenu(!showMenu)
     }
     const GoToHomePage =()=>{
         setDiepvriescellen(false)
+        setKoelmeubelen(false)
+        setkoeleBergingen(false)
+        setProceskoelingen(false)
     }
   return (
     <div className='col-lg-12 col-md-12 col-sm-12 headerContainer'>
@@ -39,11 +52,11 @@ function Header({footerid,goToService,setDiepvriescellen}) {
                 <img src={logo} alt="" />
             </div>
             <div className='secondHeaderBottom'>
-                <a style={{textDecoration:'none'}} to=""><span>HOME </span></a>
-                <a style={{textDecoration:'none'}} to=""><span className='addColor'>KOELTECHNIEK</span></a>
-                <a style={{textDecoration:'none'}} to=""><span>WARMTEPOMP </span></a>
-                <a style={{textDecoration:'none'}} to=""><span>AIRCO </span></a>
-                <a style={{textDecoration:'none'}} to=""><span>VENTILATIE </span></a>
+                <span onClick={GoToHomePage}>HOME </span>
+               <span >KOELTECHNIEK</span>
+               <span>WARMTEPOMP </span>
+               <span>AIRCO </span>
+               <span>VENTILATIE </span>
                 <a style={{textDecoration:'none'}}  href={"#"+goToService} ><span>SERVICE </span></a>
                 <a style={{textDecoration:'none'}} href={'#'+footerid}  ><span>CONTACT </span></a>
                
@@ -71,24 +84,24 @@ function Header({footerid,goToService,setDiepvriescellen}) {
             <div className='items'>
                
               <span onClick={GoToHomePage} >HOME </span>
-                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>KOELTECHNIEK</span></a>
-                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>WARMTEPOMP </span></a>
-                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>AIRCO </span></a>
-                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>VENTILATIE </span></a>
-                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>SERVICE </span></a>
-                <a style={{textDecoration:'none', marginBottom:10}} to=""><span>CONTACT </span></a>
+                <span>KOELTECHNIEK</span>
+               <span>WARMTEPOMP </span>
+               <span>AIRCO </span>
+               <span>VENTILATIE </span>
+               <span>SERVICE </span>
+               <span>CONTACT </span>
               
             </div>
             <div className="items1">
-            <a style={{textDecoration:'none', marginBottom:10}} href=''> <span>Aanpak  </span> </a>
-            <a style={{textDecoration:'none',marginBottom:10 }} href=''> <span>Over ons </span> </a>
-            <a style={{textDecoration:'none',marginBottom:10}} href=''> <span>Verhuur </span> </a>
-            <a style={{textDecoration:'none',marginBottom:10}} href=''> <span>Verkoop </span> </a>
-            <a style={{textDecoration:'none' ,marginBottom:10}} href=''> <span> Blog </span> </a>
-            <a style={{textDecoration:'none', marginBottom:10}} href=''> <span> Realisaties </span> </a>
-            <a style={{textDecoration:'none' ,marginBottom:10}} href=''> <span> D.D.cool </span> </a>
-            <a style={{textDecoration:'none' ,marginBottom:10}} href=''> <span> Asogem-Equipment </span> </a>
-           
+                <span>Aanpak  </span> 
+                <span>Over ons </span> 
+                <span>Verhuur </span> 
+                <span>Verkoop </span> 
+                <span> Blog </span>
+                <span> Realisaties </span> 
+                <span> D.D.cool </span>
+                <span> Asogem-Equipment </span> 
+    
         </div>
             </div>
         </div>

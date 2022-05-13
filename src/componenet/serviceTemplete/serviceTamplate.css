@@ -9,11 +9,18 @@
 }
 .temCoWrapper{
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bgContaier{
-    width: 100%;
-
+    width: 700px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .descriptionContinaer{
@@ -107,12 +114,13 @@
     justify-content: center;
     text-align: center;
 }
+    ul li {
+    list-style: none;
+}
 
 
 @media only screen and (max-width: 1500px){
-    .temCoWrapper{
-        width: 80%;
-    }
+ 
     .bSRightBtn1{
         width: 70%;
     }
@@ -168,9 +176,12 @@
    .descriptionContinaer h1{
         font-size: 28px;
    }
+  .bgContaier {
+    width: 500px;
+    height: 400px;
+   }
    .bgContaier img{
      position: relative;
-     left: -150px;
    }
 }
 
