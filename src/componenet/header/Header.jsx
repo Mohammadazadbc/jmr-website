@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import "./header.css"
 import {ImPhone} from "react-icons/im"
@@ -6,27 +6,32 @@ import logo from './jrm.png';
 import {HiMenu} from "react-icons/hi"
 import { a } from "react-router-dom"
 
-function Header(
-    {
-        footerid,
-        goToService,
-        setDiepvriescellen,
-        setKoelmeubelen,
-        setkoeleBergingen,
-        setProceskoelingen
-    }
-    
-    ) {
+function Header(props) {
     const [showMenu, setShowMenu] = useState(false)
     const ShowHideMenu = ()=>{
         setShowMenu(!showMenu)
+    } 
+     const goToAboutPage = ()=>{
+        props.setDiepvriescellen(false)
+        props.setKoelmeubelen(false)
+        props.setkoeleBergingen(false)
+        props.setProceskoelingen(false)
+        props.setKoelcellen(false)
+        setShowMenu(false)
+        props.setAboutUs(true)
     }
     const GoToHomePage =()=>{
-        setDiepvriescellen(false)
-        setKoelmeubelen(false)
-        setkoeleBergingen(false)
-        setProceskoelingen(false)
+        props.setDiepvriescellen(false)
+        props.setKoelmeubelen(false)
+        props.setkoeleBergingen(false)
+        props.setProceskoelingen(false)
+        props.setKoelcellen(false)
+        props.setAboutUs(false)
+        setShowMenu(false)
     }
+
+ 
+    
   return (
     <div className='col-lg-12 col-md-12 col-sm-12 headerContainer'>
         <div className="firstHeader">
@@ -52,15 +57,15 @@ function Header(
                 <img src={logo} alt="" />
             </div>
             <div className='secondHeaderBottom'>
-                <span onClick={GoToHomePage}>HOME </span>
-               <span >KOELTECHNIEK</span>
-               <span>WARMTEPOMP </span>
-               <span>AIRCO </span>
-               <span>VENTILATIE </span>
-                <a style={{textDecoration:'none'}}  href={"#"+goToService} ><span>SERVICE </span></a>
-                <a style={{textDecoration:'none'}} href={'#'+footerid}  ><span>CONTACT </span></a>
+                <span  onClick={GoToHomePage}>HOME </span>
+                <span onClick={goToAboutPage}>OVER ONS</span>
+                <a onClick={GoToHomePage} style={{textDecoration:'none'}}  href={"#"+props.goToService} ><span>SERVICE </span></a>
+                <a onClick={GoToHomePage} style={{textDecoration:'none'}} href={'#'+props.footerid}  ><span>CONTACT </span></a>
                
-              
+                
+
+
+
             </div>
         </div>
 
@@ -84,17 +89,14 @@ function Header(
             <div className='items'>
                
               <span onClick={GoToHomePage} >HOME </span>
-                <span>KOELTECHNIEK</span>
-               <span>WARMTEPOMP </span>
-               <span>AIRCO </span>
-               <span>VENTILATIE </span>
-               <span>SERVICE </span>
-               <span>CONTACT </span>
+               <span onClick={goToAboutPage} >OVER ONS </span>
+               <span  onClick={GoToHomePage} style={{textDecoration:'none'}}  href={"#"+props.goToService} >SERVICE </span>
+               <span onClick={GoToHomePage} style={{textDecoration:'none'}} href={'#'+props.footerid}>CONTACT </span>
               
             </div>
             <div className="items1">
                 <span>Aanpak  </span> 
-                <span>Over ons </span> 
+                <span >Over ons </span> 
                 <span>Verhuur </span> 
                 <span>Verkoop </span> 
                 <span> Blog </span>

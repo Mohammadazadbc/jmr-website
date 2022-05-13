@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./serviceTamplate.css"
 
 function ServiceTemple(props) {
+    
   return (
     <div className='templateContainer' >
         <div className="temCoWrapper">
@@ -22,7 +23,7 @@ function ServiceTemple(props) {
             </div>
         </div>
 
-        <div className="HeaderSection">
+        <div className={props.showNavBar ? "HeaderSection" : "hide"}  >
             <div className='headerSectionInfos'>
                 <h4>EEN VRAAG?</h4>
                 <h6>Aarzl niet om ons te contacteren</h6>

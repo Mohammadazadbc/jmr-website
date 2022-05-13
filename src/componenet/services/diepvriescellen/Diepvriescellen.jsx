@@ -15,6 +15,7 @@ function Diepvriescellen() {
    listLi3={"- 14 cm: voor snelvriezers"}   
    listLi4={"- 20 cm: geschikt voor industriële vrieshallen"}   
    SleftP2={"Bij diepvriescellen is steeds een goed geïsoleerde vloer nodig. De toplaag is in PVC, inox, staal of beton. Een antislip-uitvoering is steeds mogelijk. Moet u in de cel rijden met een heftruck? Dan wordt uw diepvrieskamer ingebouwd, zodat er geen niveauverschil is. Voor uw comfort kunnen we alle diepvriescellen ook uitwerken met wandrekken. En dit zowel in aluminium, als in kunststof of inox."}
+   showNavBar={true}
 
     />
   )

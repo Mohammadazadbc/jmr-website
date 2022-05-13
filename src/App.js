@@ -10,6 +10,7 @@ import "./App.css"
 import Diepvriescellen from "./componenet/services/diepvriescellen/Diepvriescellen";
 import KoeleBergingen from "./componenet/services/koeleBergingen/KoeleBergingen";
 import Proceskoelingen from "./componenet/services/Proceskoelingen/Proceskoelingen"
+import About from "./componenet/about/About";
 function App() {
   const [footerid, setGoToFooter] = useState("footerid")
   const [goToService, setgoToService] = useState("serviceId")
@@ -18,6 +19,7 @@ function App() {
   const [koelmeubelen, setKoelmeubelen] = useState(false)
   const [koeleBergingen, setkoeleBergingen] = useState(false)
   const [proceskoelingen, setProceskoelingen] = useState(false)
+  const [aboutUs, setAboutUs] = useState(false)
 
   return ( 
     <div className="bigContainer">
@@ -28,12 +30,21 @@ function App() {
      setKoelmeubelen={setKoelmeubelen}
      setkoeleBergingen={setkoeleBergingen}
      setProceskoelingen={setProceskoelingen}
+     setAboutUs={setAboutUs}
+     koelCellen={koelCellen}
+     diepvriecellen={diepvriecellen}
+     koelmeubelen={koelmeubelen}
+     koeleBergingen={koeleBergingen}
+     proceskoelingen={proceskoelingen}
+
+
      />
     {
-      koelCellen ? <Koelcellen /> : diepvriecellen ? <Diepvriescellen /> :
+      koelCellen ? <Koelcellen  /> : diepvriecellen ? <Diepvriescellen /> :
       koelmeubelen ? <Koelmeubelen /> :
       koeleBergingen ? <KoeleBergingen /> :
       proceskoelingen ? <Proceskoelingen /> :
+      aboutUs ? <About /> :
       <MainHome serviceId={goToService}
       setKoelcellen={setKoelcellen} 
       setDiepvriescellen={setDiepvriescellen}

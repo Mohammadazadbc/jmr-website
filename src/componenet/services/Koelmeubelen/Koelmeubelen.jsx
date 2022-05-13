@@ -20,6 +20,7 @@ function Koelmeubelen() {
    listLi7={"- IJsblokjesmachines"}   
    listLi8={"- Inox tafels en kasten"}   
    SleftP2={"Maar ook buffetmeubelen, opzetkoelingen, saladettes en gekoelde werktafels vindt u in ons assortiment. Niet de juiste koelmeubelen gevonden? Dan werken we voor u graag een ontwerp op maat uit."}
+   showNavBar={true}
 
     />
   

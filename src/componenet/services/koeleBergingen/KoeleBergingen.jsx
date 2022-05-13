@@ -12,7 +12,7 @@ function KoeleBergingen() {
    SleftP1={"In onze bergingen heerst een temperatuur tussen 10 en 14° C. De luchtvochtigheidsgraad bedraagt steeds meer dan 60%. Die factoren maken uw geklimatiseerde ruimte ideaal om groenten en fruit te bewaren, net als conservenblikken, sigaren en chocolade. Ook kaas kunt u laten rijpen in een koele berging van OptimaCool en uw wijn komt er tot zijn volle wasdom. Bekijk ook onze gespecialiseerde wijnkoelingen."}
    SleftH4={"Energiezuinig & hygiënisch"}
    SleftP2={"Uw koele berging plaatst u waar u maar wil. U kunt bijvoorbeeld een koelinstallatie plaatsen in een bestaande ruimte, zoals uw zolder of kelder. Het elektriciteitsverbruik van uw koelsysteem wordt dan bepaald door de isolatie van die ruimte. Hoe beter geïsoleerd, hoe lager het verbruik. Een alternatief is om een volledig geïsoleerde koelcel (12° C) in te bouwen. Perfect hygiënisch en gemakkelijk te onderhouden. Ook voor bijbehorende rekken in aluminium, kunststof of inox kunt u bij ons terecht."}
-   
+   showNavBar={true}
    />
   )
 }

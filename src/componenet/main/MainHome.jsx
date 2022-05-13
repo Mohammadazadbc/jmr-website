@@ -8,29 +8,21 @@ import koelebergingen from  "./assete/koelebergingen.jpg"
 import Koelmeubelen from  "./assete/Koelmeubelen.jpg"
 import proceskoeling from  "./assete/proceskoeling.jpg"
 
-function MainHome(
-    {
-        setKoelcellen,
-        setDiepvriescellen,
-        setKoelmeubelen,
-        setkoeleBergingen,
-        setProceskoelingen
-    }
-    , props) {
+function MainHome(props) {
     const GoToKoelCellenPage =()=>{
-        setKoelcellen(true)
+        props.setKoelcellen(true)
     }   
     const GoDiepvriesPage =()=>{
-        setDiepvriescellen(true)
+        props.setDiepvriescellen(true)
     } 
     const GoKoelmeubelenPage =()=>{
-        setKoelmeubelen(true)
+        props.setKoelmeubelen(true)
     }
       const GoKoeleBergingenPage =()=>{
-        setkoeleBergingen(true)
+        props.setkoeleBergingen(true)
     } 
      const GoProceskoelingenPage =()=>{
-        setProceskoelingen(true)
+        props.setProceskoelingen(true)
     }
   return (
     <div className='mainHomeContainer' >
